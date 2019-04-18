@@ -28,7 +28,7 @@ int main()
         scanf("%d", &n);
         switch(n)
         {
-            case 1: printf("Enter filename and size :");
+            case 1: printf("Enter file ID and size :");
                 scanf("%d %d", &f[cnt].fID, &f[cnt].size);
                 int n=(int)(f[cnt].size/s);
                 struct node *head=NULL;
@@ -57,7 +57,7 @@ int main()
                 f[cnt].start=head;
                 cnt++;
                 break;
-            case 2: printf("ID\t\tStart\t\tEnd\n");
+            case 2: printf("ID\t\tStart\t\t\tEnd\n");
                 for(i = 0; i < cnt; i++)
                 {
                     printf("%d\t\t%p\t\t%p\n", f[i].fID, f[i].start,f[i].end);
